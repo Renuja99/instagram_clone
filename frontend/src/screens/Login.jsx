@@ -28,7 +28,7 @@ const Login = () => {
             },
             ]}
         >
-            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" style={InputStyling}/>
         </Form.Item>
         <Form.Item
             name="password"
@@ -43,6 +43,7 @@ const Login = () => {
             prefix={<LockOutlined className="site-form-item-icon" />}
             type="password"
             placeholder="Password"
+            style={InputStyling}
             />
         </Form.Item>
         <Form.Item>
@@ -56,7 +57,7 @@ const Login = () => {
         </Form.Item>
 
         <Form.Item>
-            <Button type="primary" htmlType="submit" className="login-form-button">
+            <Button type="primary" htmlType="submit" className="login-form-button" style={buttonStyling}>
             Log in
             </Button>
             Or <a href="">register now!</a>
@@ -87,5 +88,19 @@ const Instagram_logo = {
     height: "200px",
     width: '350px',
     marginBottom: '30px'
+}
+
+const InputStyling ={
+
+    padding: '10px'
+}
+
+const buttonStyling={
+    width: '100%',
+    height: '100%',
+    padding: '10px',
+    backgroundColor: 'rgb(16, 82, 132)',
+    borderRadius: '10px',
+    marginBottom: '10px'
 }
 
